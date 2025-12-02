@@ -9,10 +9,90 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
     </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <!-- Title bar -->
+    <header class="sticky-top container-fluid p-0">
+        <!-- <div class="container"> -->
+            <ul class="list-unstyled d-flex flex-row justify-content-around m-0 py-1">
+                <li>  
+                    <select id="menu-select">
+                        <option value="" disabled selected>Menu</option>
+                        <option value="#posn-intro">Introduction</option>
+                    </select>
+                </li>
+                <li class="d-flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                        <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
+                    </svg>
+                    <p class="m-0">Michael Dalton</p>
+                </li>
+            </ul>
+        <!-- </div> -->
+    </header>
+
+    <section class="container" id="all-section">
+
+        <!-- Side menu.  Floats above main and is collapsable -->
+        <aside class="col-3">
+                <div class="row">
+                    <div class="col-3">
+                    </div>
+                </div>
+            </section>
+        </aside>
+
+        <!-- Main panel alongside side menu -->
+        <main class="col">
+        
+            <!-- Hero image -->
+            <section class="row pb-1" id="posn-intro"> 
+                <div class="position-relative">
+                    <img src="./img/lego-man.png" id="hero-img" class="img-fluid w-100 h-100 mx-auto fade-in-hero" alt="Lego man portrait"> 
+
+                    <div class="position-absolute start-50 top-50 translate-middle-x text-black d-flex justify-content-center nowrap" id="hi-im">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15vw" height="15vw" fill="currentColor" class="bi bi-chevron-right fade-our-cursors" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                        </svg>
+
+                        <p class="" id="typewriter">Hi.  I'm ..</p>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15vw" height="15vw" fill="currentColor" class="bi bi-chevron-left fade-our-cursors" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                        </svg>
+                    </div>
+
+                    <!-- TODO: Learn More button leads to another page or same page link -->
+                    <div class="position-absolute bottom-0 start-50 translate-middle-x mb-5">
+                        <a href="#about-me" class="btn btn-light btn-lg">Learn More</a>
+                </div>  
+            </section>
+
+            <!-- TODO: Samples sits below and contains cards linking other projects -->
+            <section></section>
+        </main>
+
+    <!-- Bottom section - footer 
+        TODO: Tele, Email, Mob, contact form -->
+    <footer style="background-color: #31393e;" class="sticky-bottom pb-3 pt-3 shadow-top text-center text-light">
+        <div class="row justify-content-center">
+            <div class="col-4">
+                Address and image
+            </div>
+            <div class="col-4">
+                More info links
+            </div>
+            <div class="col-4">
+                Other page links
+            </div>
+        </div>
+
+        <div class="row">
+            <p class="col-12 text-center p-2">Copyright (c) 2025 This Company</p>
+        </div>
+    </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
