@@ -119,33 +119,50 @@
             </article>
 
             <!-- Contact Me form -->
-            <article id="page-contactme" class="container-fluid my-4 col-md-8 bg-light">
+            <article id="page-contactme" class="container-fluid my-4 col-md-8 p-3">
 
                 <!-- Netlify will show "request-form" as form name -->
                 <form method="POST" name="request-form" id="request-form" data-netlify="true" action="./thank-you.html">
 
-                    <h2>You can contact me here</h2>
+                    <h2>Contact me here</h2>
                     <div class="mt-4 row p-3">
-                        <input type="email" id="business_email" name="business_email" class="col-12" placeholder="Business email*" required>
+                        <input type="email" id="business_email" name="business_email" class="col-12 form-radial" placeholder="Business email*" required>
                     </div>
 
                     <div class="row p-3">
-                        <input type="text" id="first_name" name="first_name" placeholder="First name*" class="col me-2" required>
-                        <input type="text" id="last_name" name="last_name" placeholder="Last name" class="col">
+                        <input type="text" id="first_name" name="first_name" placeholder="First name*" class="col me-2 form-radial" required>
+                        <input type="text" id="last_name" name="last_name" placeholder="Last name" class="col form-radial">
                     </div>
 
-                    <div class="row p-3">
-                        <select name="why_request" id="why_request" class="col" required>
+                    <!-- <div class="row p-3">
+                        <select name="why_request" id="why_request" class="col form-radial" required>
                             <option value="" disabled selected>Please tell us why you're getting in touch today*</option>
                             <option value="interested-in-product">I'm interested in your product line</option>
                             <option value="valued-customer">I'm already a valued customer</option>
                             <option value="leave-review">I'd love to leave a review</option>
                         </select>
+                    </div> -->
+                    <div class="mb-3 p-0">
+                        <label for="messageTextarea" class="form-label">Your Message or Comments</label>
+
+                        <textarea 
+                            class="form-control" 
+                            id="messageTextarea" 
+                            name="message" 
+                            rows="5" 
+                            placeholder="Type your long message here..."
+                            required>
+                        </textarea>
+
+                        <div class="form-text">
+                            Please be detailed in your response.
+                        </div>
                     </div>
 
-                    <p>By submitting this form, you accept our privacy policy and agree to us contacting you about our products and services.</p>
+                    <p>I aim to respond quickly but this may take a few days depending on the volume of requests.</p>
+
                     <div class="d-flex justify-content-center">
-                        <input type="submit" value="Submit" class="fw-bold bg-primary px-5 center border-0">
+                        <input type="submit" value="Submit" class="fw-bold bg-primary px-5 center border-0 form-radial">
                     </div>
 
                     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

@@ -59,9 +59,19 @@ header {
     font-weight: bolder;
 }
 
-div > input, select {
+
+#page-contactme {
+    background-color:#e3f2fd;
     border-radius: 1vw;
-    padding: 5px;
+}
+
+.form-radial {
+    /* border-radi
+}
+
+div > input, select { */
+    border-radius: 1vw;
+    padding: 1vw;
 }
 
 .samples-card {
