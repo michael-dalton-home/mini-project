@@ -14,23 +14,28 @@
 </head>
 <body>
     <!-- Title bar -->
-    <header class="sticky-top container-fluid p-0">
-        <!-- <div class="container"> -->
-            <ul class="list-unstyled d-flex flex-row justify-content-around m-0 py-1">
-                <li>  
-                    <select id="menu-select">
-                        <option value="" disabled selected>Menu</option>
-                        <option value="#posn-intro">Introduction</option>
-                    </select>
-                </li>
-                <li class="d-flex">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
-                        <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
-                    </svg>
-                    <p class="m-0">Michael Dalton</p>
-                </li>
-            </ul>
-        <!-- </div> -->
+    <header class="sticky-top container-fluid p-0 align-items-center">
+        <ul class="list-unstyled d-flex flex-row justify-content-around m-0 py-1">
+            <li>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle  bg-transparent border-0" id="top-menu" type="button" data-bs-toggle="dropdown">
+                        Informal Menu
+                    </button>
+                    <ul class="dropdown-menu shadow-none border-0">
+                        <li><a class="dropdown-item" href="#page-aboutme">About Me</a></li>
+                        <li><a class="dropdown-item" href="#page-samples">Work Samples</a></li>
+                        <li><a class="dropdown-item" href="#page-footer">Contact Me</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="d-flex flex-row align-items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                    <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
+                </svg>
+                <p class="m-0">Michael Dalton</p>
+            </li>
+        </ul>
     </header>
 
     <section class="container" id="all-section">
@@ -50,7 +55,7 @@
             <!-- Hero image -->
             <section class="row pb-1" id="posn-intro"> 
                 <div class="position-relative">
-                    <img src="./img/lego-man.png" id="hero-img" class="img-fluid w-100 h-100 mx-auto fade-in-hero" alt="Lego man portrait"> 
+                    <img src="./img/lego-man.png" id="hero-img" class="w-100 h-100 mx-auto fade-in-hero" alt="Lego man portrait"> 
 
                     <div class="position-absolute start-50 top-50 translate-middle-x text-black d-flex justify-content-center nowrap" id="hi-im">
                         <svg xmlns="http://www.w3.org/2000/svg" width="15vw" height="15vw" fill="currentColor" class="bi bi-chevron-right fade-our-cursors" viewBox="0 0 16 16">
@@ -71,12 +76,51 @@
             </section>
 
             <!-- TODO: Samples sits below and contains cards linking other projects -->
-            <section></section>
+            <article id="page-samples" class="container-fluid my-4">
+                <h1 class="text-center mt-3 mb-4">Work Samples</h1>
+                
+                <div class="row justify-content-center">
+
+                    <div class="card m-2 col-md-4 shadow fade-in samples-card">
+                        <img src="./img/MiniProject-thumb-640x512.png" class="img-fluid rounded-3 card-img-top mt-4 shadow-sm" alt="Garden Thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title">Bootcamp Mini Project</h5>
+                            <p class="card-text">An encapsulation of the themes and features explored so far in the Bootcamp.</p>
+                        </div>
+                    </div>
+
+                    <div class="card m-2 col-md-4 shadow fade-in samples-card">
+                        <img src="./img/GardenRooms-titlepage-640x512.png" class="img-fluid rounded-3 card-img-top mt-4 shadow-sm" alt="Garden Thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title">Bootstrap Framework</h5>
+                            <p class="card-text">Demonstrating features of the Bootstrap framework while creating a responsive layout.</p>
+                        </div>
+                    </div>
+
+                    <div class="card m-2 col-md-4 shadow fade-in samples-card">
+                        <img src="./img/Calculator-main-640x512.png" class="img-fluid rounded-3 card-img-top mt-4 shadow-sm" alt="Calculator Thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title">Calculator Simulator</h5>
+                            <p class="card-text">Javascript driven simulation of traditional calculator operated by keyboard or mouse.</p>
+                        </div>
+                    </div>
+
+                    <div class="card m-2 col-md-4 shadow fade-in samples-card">
+                        <img src="./img/Appleheads-main-640x512.png" class="img-fluid rounded-3 card-img-top mt-4 shadow-sm" alt="Appleheads Thumbnail">
+                        <div class="card-body">
+                            <h5 class="card-title">Meet the Appleheads</h5>
+                            <p class="card-text">Mocked up webpage for a fictional family of apple-friendly characters.  Using vanilla html, css and a little javascript.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
         </main>
 
     <!-- Bottom section - footer 
         TODO: Tele, Email, Mob, contact form -->
-    <footer style="background-color: #31393e;" class="sticky-bottom pb-3 pt-3 shadow-top text-center text-light">
+    <footer style="background-color: #31393e;" class="sticky-bottom pb-3 pt-3 shadow-top text-center text-light" id="page-footer">
         <div class="row justify-content-center">
             <div class="col-4">
                 Address and image

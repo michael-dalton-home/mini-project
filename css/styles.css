@@ -5,11 +5,27 @@ body {
     font-style: normal;
     color: black;
 
+    background-color: whitesmoke;
+
     min-width: 362px;
 }
 
 .hero-bk {
     background-color: rgba(133, 191, 117, 0.697);
+}
+
+#top-menu {
+    color:black;
+}
+
+/* Stop the top menu button from highlighting on a click */
+#top-menu:focus,
+#top-menu:active,
+#top-menu.focus,
+#top-menu.active {
+    box-shadow: none !important; 
+    outline: none !important;
+    border-color: inherit !important;
 }
 
 #cursor {
@@ -23,7 +39,7 @@ select {
     background-color: rgba(255, 255, 255, 0);
 }
 
-#my-name, li {
+footer, header {
     font-family: "Space Mono", monospace;
     font-weight: 400;
     font-style: normal;
@@ -35,11 +51,19 @@ header {
     background-color: #e3f2fd;
 }
 
-
-
 #hi-im {
     font-size: 8vw;
     font-weight: bolder;
+}
+
+.samples-card {
+    background-color: #83bae27b;
+    transition: all 0.1s ease-in-out;
+}
+.samples-card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+    z-index: 5;
 }
 
 #hero-img {
@@ -51,7 +75,9 @@ header {
     opacity: 1;
 }
 
-/* Animation: Fade in our cusrsors */
+/*
+ * Introductory Animations 
+ */
 
 /* 0. Animation: Fade in cursors before typing, then fade them out again using opacity */
 .fade-our-cursors {
@@ -77,7 +103,7 @@ header {
     overflow: hidden;
     white-space: nowrap; 
 
-    animation: typing 8s steps(12) 1; 
+    animation: typing 8s steps(12) 1;
         
     animation-delay: 6s; 
     animation-fill-mode: forwards; 
