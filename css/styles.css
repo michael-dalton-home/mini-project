@@ -59,6 +59,11 @@ header {
     font-weight: bolder;
 }
 
+div > input, select {
+    border-radius: 1vw;
+    padding: 5px;
+}
+
 .samples-card {
     background-color: #c0e5ff;
     transition: all 0.1s ease-in-out;
