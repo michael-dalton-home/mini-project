@@ -4,6 +4,9 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     color: black;
+    
+    background: url('../img/main-background.jpg') center center fixed;
+    background-size: cover;
 
     background-color: whitesmoke;
 
@@ -57,7 +60,7 @@ header {
 }
 
 .samples-card {
-    background-color: #83bae27b;
+    background-color: #c0e5ff;
     transition: all 0.1s ease-in-out;
 }
 .samples-card:hover {
