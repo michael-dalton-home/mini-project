@@ -4,9 +4,6 @@ body {
     font-optical-sizing: auto;
     font-style: normal;
     color: black;
-    
-    background: url('../img/main-background.jpg') center center fixed;
-    background-size: cover;
 
     background-color: whitesmoke;
 
@@ -60,18 +57,27 @@ header {
 }
 
 
+#page-samples {
+    
+    background: url('../img/main-background.jpg') center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+#posn-intro {
+    
+}
+
 #page-contactme {
     background-color:#e3f2fd;
     border-radius: 1vw;
 }
 
 .form-radial {
-    /* border-radi
-}
-
-div > input, select { */
     border-radius: 1vw;
     padding: 1vw;
+    border-color: darkgray;
 }
 
 .samples-card {
@@ -86,6 +92,22 @@ div > input, select { */
 
 #hero-img {
     opacity: 0;
+
+  /* The element that has the hole cut into it (the paper in your example) */
+  background-color: whitesmoke;
+ 
+}
+
+.reveal-on-scroll {
+  opacity: 0; 
+  transform: translateY(20px); 
+  transition: opacity 1s ease-out, transform 0.6s ease-out;
+}
+
+/* --- Final State (Visible) --- */
+.revealed {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Return to original position */
 }
 
 #all-section {
