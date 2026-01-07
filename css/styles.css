@@ -115,6 +115,20 @@ header {
     opacity: 1;
 }
 
+/* The images in the modals are 700x300 but we don't use them at full size so as to match nicely with the text */
+.modal-img {
+    max-height: 223px; 
+    max-width: 520px;
+    border-radius: 10px;
+}
+@media (min-width: 768px) {
+    .modal-img {
+        max-height: 300px; 
+        max-width: 720px;
+        border-radius: 10px;
+    }
+}
+
 /*
  * Introductory Animations 
  */

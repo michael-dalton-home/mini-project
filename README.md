@@ -1,30 +1,35 @@
 # mini-project
 Initial mini project for Bootcamp Web Dev
-Including Bootstrap framework, and gGoogle Monserrat font.
+Including Bootstrap framework, and Google Monserrat font.
 
-Part of CodersGuild Web Developer Bootcamp 2025
+Part of CodersGuild Web Developer Bootcamp 2025/2026
 
 
 Project references
-- Bootcamp mini project (this).  
-    https://euphonious-sunshine-7a5f3b.netlify.app.  
-    https://github.com/michael-dalton-home/mini-project
+- Bootcamp mini project (this)
+    Hosted https://all-about-michael-dalton.netlify.app/
+    Github https://github.com/michael-dalton-home/mini-project
     Conducted through CodersGuild Bootcamp Web Development
 
+- Travis Cars project  
+    Hosted https://mock-travis-cars.netlify.app/
+    Github https://github.com/michael-dalton-home/travis-cars
+    Conducted alongside CodersGuild Bootcamp Web Development
+
 - Garden Rooms project
-    https://michael-dalton-home.github.io/garden-room/
-    https://github.com/michael-dalton-home/garden-room
-    Conducted through The Odin Project Faoundation course
+    Hosted https://mock-garden-rooms.netlify.app/
+    Github https://github.com/michael-dalton-home/garden-room
+    Conducted through CodersGuild Bootcamp Web Development
     
 - Calculator simulator project
-    https://michael-dalton-home.github.io/calculator/
-    https://github.com/michael-dalton-home/calculator
-    Conducted through The Odin Project Faoundation course
+    Hosted https://michael-dalton-home.github.io/calculator/
+    Github https://github.com/michael-dalton-home/calculator
+    Conducted through The Odin Project Foundation course
 
 - Appleheads project
-    https://michael-dalton-home.github.io/appleheads/
-    https://github.com/michael-dalton-home/appleheads
-    Conducted through The Odin Project Faoundation course
+    Hosted https://michael-dalton-home.github.io/appleheads/
+    Github https://github.com/michael-dalton-home/appleheads
+    Conducted through The Odin Project Foundation course
 
 
 Attributes
