@@ -87,14 +87,15 @@
 
                     <div class="card m-2 col-md-4 shadow samples-card reveal-on-scroll" 
                     data-bs-toggle="modal" data-bs-target="#modalBootcamp">
-                        <img src="./img/MiniProject-thumb-640x512.png" class="img-fluid rounded-3 card-img-top mt-4 shadow-sm" alt="Garden Thumbnail">
+                        <img src="./img/MiniProject-thumb-640x512.png" class="img-fluid rounded-3 card-img-top mt-4 shadow-sm" alt="Mini project Thumbnail">
                         <div class="card-body">
                             <h5 class="card-title">Bootcamp Mini Project</h5>
                             <p class="card-text">An encapsulation of the themes and features explored so far in the Bootcamp.</p>
                         </div>
                     </div>
 
-                    <div class="card m-2 col-md-4 shadow samples-card reveal-on-scroll">
+                    <div class="card m-2 col-md-4 shadow samples-card reveal-on-scroll"
+                        data-bs-toggle="modal" data-bs-target="#modalTravis">
                         <img src="./img/Travis-thumb-640x512.png" class="img-fluid rounded-3 card-img-top mt-4 shadow-sm" alt="Travis Thumbnail">
                         <div class="card-body">
                             <h5 class="card-title">Travis Cars Mock</h5>
@@ -106,8 +107,8 @@
                     <div class="card m-2 col-md-4 shadow samples-card reveal-on-scroll">
                         <img src="./img/GardenRooms-titlepage-640x512.png" class="img-fluid rounded-3 card-img-top mt-4 shadow-sm" alt="Garden Thumbnail">
                         <div class="card-body">
-                            <h5 class="card-title">Garden Rooms Mock</h5>
-                            <p class="card-text">Mock up of another real-world site - Garden Rooms.<br>
+                            <h5 class="card-title">Garden Room Mock</h5>
+                            <p class="card-text">Mock up of another real-world site - Garden Room.<br>
                                 Demonstrating features of the Bootstrap framework while creating a responsive layout.</p>
                         </div>
                     </div>
@@ -232,7 +233,7 @@
                     previous learning experience.  It is built using HTML5, CSS3 (including Flexbox and Bootstrap), and JavaScript.  
                     The Bootstrap framework has been used to provide responsive layout and components.
                     
-                    <div class="row justify-content-between col-12">
+                    <div class="row justify-content-between col-12 mt-3">
                         <h5>Navigation bar</h5>
                         <div class="row">
                             <p class="col-lg-6 order-2 order-lg-1">
@@ -245,7 +246,7 @@
                         </div>
                     </div>
                     
-                    <div class="row justify-content-between col-12">
+                    <div class="row justify-content-between col-12 mt-3">
                         <h5>Animations</h5>
                         <div class="row">
                             <img class="img-fluid col-lg-6 rounded modal-img order-1 order-lg-1" 
@@ -256,7 +257,7 @@
                         </div>
                     </div>
 
-                    <div class="row justify-content-between col-12">
+                    <div class="row justify-content-between col-12 mt-3">
                         <h5>Work Samples Cards</h5>
                         <div class="row">
                             <p class="col-lg-6 col-12 order-2 order-lg-1">
@@ -274,17 +275,129 @@
                     </div>
                 </div>
 
-                <div class="modal-footer container">
-                    Source code available on GitHub:
-                    <a href="https://github.com/michael-dalton-home/mini-project" target="_blank">
-                        https://github.com/michael-dalton-home/mini-project
-                    </a>
+                <div class="modal-footer d-flex flex-column container">
+                    <div>
+                        Source code available on GitHub:
+                        <a href="https://github.com/michael-dalton-home/mini-project" target="_blank">
+                            https://github.com/michael-dalton-home/mini-project
+                        </a>
+                    </div>
+                    <div>
+                        Hosted site: 
+                        <a href="https://all-about-michael-dalton.netlify.app/">
+                            https://all-about-michael-dalton.netlify.app
+                        </a>
+                    </div>
                 </div>
 
             </div>
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- MODAL TRAVIS -->
+    <div class="modal" id="modalTravis" data-bs-backdrop="static" 
+        data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalTravis" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTravis">Mock Travis Cars Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    A personal project to reinvent a real world website supporting a real world business - Travis Cars.
+                    Built using HTML5, CSS3 (including Flexbox and Bootstrap), and JavaScript.  
+                    With Bootstrap framework supporting much of the responsive layout and components.
+                    The site is not functional but is a mock up to demonstrate layout and design skills.
+                    Test data is used in lieu of the absence of a backend database.
+
+                    <div class="row justify-content-between col-12 mt-3">
+                        <h5>Hero Title Overlay</h5>
+                        <div class="row">
+                            <p class="col-lg-6 order-2 order-lg-1">
+                                Introducing the website is an overlay to the attractive hero image, comprising site title and description
+                                explaining the site purpose.  The semi opaque background the the titles fades in quickly followed by text description.
+                                Subtle wide expansion on the title text increases presence and is slightly brighter to encourage user focus.
+                            </p>
+                            <img class="img-fluid col-lg-6 modal-img  order-1 order-lg-2" 
+                                src="./img/Travis-title-overlay.png" alt="Image of hero image overlaid titles on main page">
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between col-12 mt-3">
+                        <h5>Attractions Section</h5>
+                        <div class="row">
+                            <p class="col-lg-6 col-12 order-2 order-lg-2">
+                                Following the titles and hero is a section illustrating 
+                                what services the client company provide and why they are a good choice.
+                                Implemented as a series of rows each containing image and text, side by side using columns
+                                with Bootstrap managing the layout and responsive design.  Care taken to order the image and text
+                                appropriately for different screen sizes to maintain user experience.
+                            </p>
+                            <img class="img-fluid col-lg-6 col-12 rounded-3 modal-img order-1 order-lg-1 border" 
+                                src="./img/Travis-attractions-700x300.png" 
+                                alt="Image showing two rows of image/text from the attractions section">
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between col-12 mt-3">
+                        <h5>Footer Section</h5>
+                        <div class="row">
+                            <p class="col-lg-6 order-2 order-lg-1">
+                                Footer contains contact details, company logo, and copyright.
+                                Contact info is real life, and each headed by an appropriate icon to enhance visual appeal and understanding.
+                                The company logo reaffirms brand identity while the copyright statement reaffirms that all details relating to 
+                                the business are in fact their property.
+                            </p>
+                            <img class="img-fluid col-lg-6 modal-img  order-1 order-lg-2" 
+                                src="./img/Travis-footer-700x300.png" alt="Image of footer section including contact details and logo">
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between col-12 mt-3">
+                        <h5>Inventory Cards</h5>
+                        <div class="row">
+                            <p class="col-lg-6 order-2 order-lg-2">
+                                Clicking through to the inventory reveals a new page listing available (and sold) cars.  Each car has it's own
+                                Bootstrap card containing image, title, brief description, and price.  Cards are arranged in a containerised 
+                                responsive layout.  Hovering over a card slightly enlarges it to indicate interactivity, and click through invokes
+                                a static modal which is populated with more detailed information about the selected car.
+                                The cards are created dynamically using javascript whereas the modal is a static Bootstrap component which is populated
+                                on invocation with appropriate test data.
+                            </p>
+                            <img class="img-fluid col-lg-6 modal-img  order-1 order-lg-1 border" 
+                                src="./img/Travis-car-card-700x300.png" alt="Image of Bootstrap card showing details of a car for sale">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer d-flex flex-column container">
+                    <div>
+                        Source code available on GitHub:
+                        <a href="https://github.com/michael-dalton-home/travis-cars" target="_blank">
+                            https://github.com/michael-dalton-home/travis-cars
+                        </a>
+                    </div>
+                    <div>
+                        My hosted site: 
+                        <a href="https://mock-travis-cars.netlify.app/">
+                            https://mock-travis-cars.netlify.app/
+                        </a>
+                    </div>
+                    <div>
+                        Real world business site: 
+                        <a href="https://www.traviscars.co.uk/">
+                            https://www.traviscars.co.uk/
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
