@@ -86,7 +86,7 @@
                 <div class="row justify-content-center">
 
                     <div class="card m-2 col-md-4 shadow samples-card reveal-on-scroll" 
-                    data-bs-toggle="modal" data-bs-target="#modalBootcamp">
+                        data-bs-toggle="modal" data-bs-target="#modalBootcamp">
                         <img src="./img/MiniProject-thumb-640x512.png" class="img-fluid rounded-3 card-img-top mt-4 shadow-sm" alt="Mini project Thumbnail">
                         <div class="card-body">
                             <h5 class="card-title">Bootcamp Mini Project</h5>
@@ -104,7 +104,8 @@
                         </div>
                     </div>
 
-                    <div class="card m-2 col-md-4 shadow samples-card reveal-on-scroll">
+                    <div class="card m-2 col-md-4 shadow samples-card reveal-on-scroll"
+                        data-bs-toggle="modal" data-bs-target="#modalGarden">
                         <img src="./img/GardenRooms-titlepage-640x512.png" class="img-fluid rounded-3 card-img-top mt-4 shadow-sm" alt="Garden Thumbnail">
                         <div class="card-body">
                             <h5 class="card-title">Garden Room Mock</h5>
@@ -389,6 +390,135 @@
                         Real world business site: 
                         <a href="https://www.traviscars.co.uk/">
                             https://www.traviscars.co.uk/
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL GARDEN -->
+    <div class="modal" id="modalGarden" data-bs-backdrop="static" 
+        data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalGarden" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalGarden">Mock Garden Room Project</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    A Coders Guild project focused on recreating a real world business website - Garden Rooms.
+                    Built using HTML5, CSS3 (including Flexbox and Bootstrap), and JavaScript.  
+                    With Bootstrap framework supporting much of the responsive layout and components.
+
+                    <div class="row justify-content-between col-12 mt-3">
+                        <h5>Hero Title Overlay</h5>
+                        <div class="row">
+                            <p class="col-lg-6 order-2 order-lg-1">
+                                Introducing the website is an overlay to the hero image, comprising site title and description
+                                explaining the site purpose.  The semi opaque background the the titles fades in quickly followed by text description.
+                            </p>
+                            <img class="img-fluid col-lg-6 modal-img  order-1 order-lg-2" 
+                                src="./img/GardenRooms-titlepage.png" alt="Image of hero image overlaid titles on main page">
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between col-12 mt-3">
+                        <h5>Navigation bar - Big View</h5>
+                        <div class="row">
+                            <p class="col-lg-6 col-12 order-2 order-lg-2">
+                                On a large layout, the navigation bar spans the top of the viewport and remains sticky as the user scrolls down the page.
+                            </p>
+                            <img class="img-fluid col-lg-6 col-12 rounded-3 modal-img order-1 order-lg-1" 
+                                src="./img/GardenRooms-responsivenav-big.png" 
+                                alt="Image navigation bar in full menu state">
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between col-12 mt-3">
+                        <h5>Navigation bar - Small View</h5>
+                        <div class="row">
+                            <p class="col-lg-6 order-2 order-lg-1">
+                                On a smaller screen layout, the navigation bar collapses into a hamburger menu to save space.  Clicking
+                                the hamburger reveals the full menu options.
+                            </p>
+                            <img class="img-fluid col-lg-6 modal-img  order-1 order-lg-2" 
+                                src="./img/GardenRooms-responsivenav-sml.png" alt="Image of navigation bar in collapsed hamburger menu state">
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between col-12 mt-3">
+                        <h5>Carousel</h5>
+                        <div class="row">
+                            <p class="col-lg-6 order-2 order-lg-2">
+                                Below the hero image is a Bootstrap carousel component which cycles automatically through images of different garden rooms.
+                                Overlaid on each image is desdriptive text to inform the user what they are seeing.
+                            </p>
+                            <img class="img-fluid col-lg-6 modal-img  order-1 order-lg-1 border" 
+                                src="./img/GardenRooms-carousel.png" alt="Image of carousel component showing various garden room styles">
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between col-12 mt-3">
+                        <h5>SVG Decoration</h5>
+                        <div class="row">
+                            <p class="col-lg-6 order-2 order-lg-1">
+                                Breaking up delineation between carousel and cards is a decorative SVG graphic.  This helps give the page a 
+                                more fluid look.
+                            </p>
+                            <img class="img-fluid col-lg-6 modal-img  order-1 order-lg-2 border rounded-3" 
+                                src="./img/GardenRooms-svg.png" alt="Image of svg decoration">
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between col-12 mt-3">
+                        <h5>Cards</h5>
+                        <div class="row">
+                            <p class="col-lg-6 order-2 order-lg-2">
+                                Feeding the imagination of the user, is a sequence of Bootstrap cards illustrating different garden room styles.  
+                                Each card contains an image, title, and brief description.  Hovering over a card slightly enlarges it to indicate 
+                                potential interactivity.
+                                The same SVG surrounds this section.  Y-reversed on the bottom of the section.
+                            </p>
+                            <img class="img-fluid col-lg-6 modal-img  order-1 order-lg-1 " 
+                                src="./img/GardenRooms-cards.png" alt="Image of Bootstrap cards showing various garden room styles">
+                        </div>
+                    </div>                
+
+                    <div class="row justify-content-between col-12 mt-3">
+                        <h5>Accordian</h5>
+                        <div class="row">
+                            <p class="col-lg-6 order-2 order-lg-1">
+                                The FAQ section is implemented as a Bootstrap accordian component.  This allows the user to expand and collapse
+                                questions of interest, while keeping the overall section compact and easy to navigate.
+                            </p>
+                            <img class="img-fluid col-lg-6 modal-img  order-1 order-lg-2 border rounded-3" 
+                                src="./img/GardenRooms-accordian.png" alt="Image of accordian component showing FAQ section">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="modal-footer d-flex flex-column container">
+                    <div>
+                        Source code available on GitHub:
+                        <a href="https://github.com/michael-dalton-home/garden-room" target="_blank">
+                            https://github.com/michael-dalton-home/garden-room
+                        </a>
+                    </div>
+                    <div>
+                        My hosted site: 
+                        <a href="https://mock-garden-rooms.netlify.app/">
+                            https://mock-garden-rooms.netlify.app/
+                        </a>
+                    </div>
+                    <div>
+                        Real world business site: 
+                        <a href="https://gardenroomsanctuary.co.uk/">
+                            https://gardenroomsanctuary.co.uk/
                         </a>
                     </div>
                 </div>
